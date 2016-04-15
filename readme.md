@@ -9,7 +9,7 @@ Styde es una nueva comunidad de desarrollo web en español.
 
 En este curso aprenderás las **novedades de Laravel 5.2** con las cuales podrás aplicaciones de una forma aún más rápida y profesional que con la versión anterior de Laravel (5.1 LTS). ¿Estás listo?
 
-> Este curso es de nivel intermedio. Si quieres comenzar desde cero, ve: [Primeros pasos con Laravel](https://styde.net/curso-primeros-pasos-con-laravel-5/).
+> Este curso es de nivel intermedio y requiere utilizar PHP 5.6 o superior. Si quieres comenzar desde cero, ve: [Primeros pasos con Laravel](https://styde.net/curso-primeros-pasos-con-laravel-5/).
 
 Parte 1: Estructura base
 
