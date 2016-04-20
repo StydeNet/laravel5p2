@@ -30,6 +30,14 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies($gate);
 
+        $gate->before(function (User $user) {
+            /*
+            if ($user->email == 'admin@styde.net') {
+                return true;
+            }
+            */
+        });
+
         $gate->define('admin', function (User $user) {
              return $user->email === 'admin@styde.net';
         });
