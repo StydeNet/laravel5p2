@@ -27,17 +27,20 @@ En esta primera parte del curso de Laravel 5.2, vamos a comenzar a aprender sobr
 
 Laravel 5.2 incluye nuevos features para desarrollar APIs seguras en muy poco tiempo y sin instalar paquetes de terceros.
 
+8. [Limitar el número de accesos a una API con el Middleware ThrottleRequests](https://styde.net/limitar-el-numero-de-accesos-a-una-api-con-el-middleware-throttlerequests-de-laravel-5-2/) - 12:58
+9. [Sistema de Autenticación basado en token](https://styde.net/videotutorial-sistema-de-autenticacion-basado-en-token-en-laravel-5-2/) - 15:58
+
 **Parte 3: Nuevos métodos de prueba**
 
-En esta segunda parte, vamos a escribir pruebas automatizadas, utilizando los nuevos métodos de Laravel 5.2.
+En esta tercera parte, vamos a escribir pruebas automatizadas, utilizando los nuevos métodos de Laravel 5.2.
 
 **Parte 4: Más features**
 
-En esta parte 3, aprenderemos sobre los nuevos features de Blade y otro componentes del framework.
+En esta parte 4, aprenderemos sobre los nuevos features de Blade y otro componentes del framework.
 
 **Parte 5: En la matrix**
 
-En esta segunda parte, vamos a revisar el código fuente de Laravel y te voy a explicar los mecanismos internos que hacen posible que funcione el Middleware Authorize, el implicit route binding y otros de los nuevos features de Laravel
+En esta quinta parte, vamos a revisar el código fuente de Laravel y te voy a explicar los mecanismos internos que hacen posible que funcione el Middleware Authorize, el implicit route binding y otros de los nuevos features de Laravel
 
 > Este curso se encuentra en desarrollo, por favor regresa cada semana para ver las nuevas lecciones
 
