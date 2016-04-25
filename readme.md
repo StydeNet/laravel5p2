@@ -11,7 +11,7 @@ En este curso aprenderás las **novedades de Laravel 5.2** con las cuales podrá
 
 > Este curso es de nivel intermedio y requiere utilizar PHP 5.6 o superior. Si quieres comenzar desde cero, ve: [Primeros pasos con Laravel](https://styde.net/curso-primeros-pasos-con-laravel-5/).
 
-Parte 1: Estructura base
+**Parte 1: Estructura base**
 
 En esta primera parte del curso de Laravel 5.2, vamos a comenzar a aprender sobre los nuevos features, mientras desarrollamos una estructura base que podrás aplicar en tus proyectos de mediano y gran tamaño. Vamos a separar el sistema en varias partes: public, admin, API; además vamos a aplicar diferentes reglas y permisos de acceso utilizando las nuevas características del framework y sin instalar paquetes adicionales.
 
@@ -62,4 +62,4 @@ En esta quinta parte, vamos a revisar el código fuente de Laravel y te voy a ex
 *   [                        Curso de Vue.js                  ](https://styde.net/curso-de-vue-js/)
 *   [                        Curso de Gulp                    ](https://styde.net/curso-gulp-y-herramientas-de-automatizacion/)
 
-© 2015 Styde.net
+© 2016 [Styde.net](https://styde.net/)
