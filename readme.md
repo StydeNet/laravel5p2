@@ -34,6 +34,9 @@ Laravel 5.2 incluye nuevos features para desarrollar APIs seguras en muy poco ti
 
 En esta tercera parte, vamos a escribir pruebas automatizadas, utilizando los nuevos métodos de Laravel 5.2.
 
+9. [Prueba el registro de usuario con seeCredentials](https://styde.net/prueba-el-registro-de-usuario-con-seecredentials-en-laravel-5-2/) - 15:41
+10. Prueba el login y logout con seeIsAuthenticated y dontSeeIsAuthenticated.
+
 **Parte 4: Más features**
 
 En esta parte 4, aprenderemos sobre los nuevos features de Blade y otro componentes del framework.
