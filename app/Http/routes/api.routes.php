@@ -3,7 +3,7 @@
 Route::group(['prefix' => 'v1/'], function () {
 
     // This section requires token authentication
-    Route::group(['middleware' => 'auth:'], function () {
+    Route::group(['middleware' => 'auth:api'], function () {
 
         Route::get('upper/{word}', function ($word) {
             return [
@@ -13,7 +13,7 @@ Route::group(['prefix' => 'v1/'], function () {
         });
 
         Route::get('profile', function () {
-            return auth()->user();
+            return auth()->guard('api')->user();
         });
 
     });
