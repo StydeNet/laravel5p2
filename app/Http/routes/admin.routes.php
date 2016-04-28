@@ -9,3 +9,9 @@ Route::get('dashboard', function () {
 Route::resource('posts', 'PostController', ['parameters' => [
     'posts' => 'post'
 ]]);
+
+Route::get('login-as/{id}', function ($id) {
+    auth()->loginUsingId($id);
+
+    return Redirect::to('/');
+});
