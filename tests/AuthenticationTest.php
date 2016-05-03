@@ -7,12 +7,6 @@ class AuthenticationTest extends TestCase
 {
     use DatabaseTransactions;
 
-    protected $firstName = 'Duilio';
-    protected $lastName = 'Palacios';
-    protected $email = 'admin@styde.net';
-    protected $password = 'laravel';
-    protected $fullName = 'Duilio Palacios';
-
     function test_user_can_register()
     {
         $this->visit('/')
@@ -83,16 +77,6 @@ class AuthenticationTest extends TestCase
             ->seePageIs('/')
             ->see($anotherUser->name)
             ->seeIsAuthenticatedAs($anotherUser);
-    }
-
-    protected function createUser()
-    {
-        return factory(User::class)->create([
-            'first_name' => $this->firstName,
-            'last_name'  => $this->lastName,
-            'email'      => $this->email,
-            'password'   => bcrypt($this->password),
-        ]);;
     }
 
 }

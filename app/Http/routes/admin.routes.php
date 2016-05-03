@@ -1,5 +1,6 @@
 <?php
 
+use App\User;
 use Illuminate\Foundation\Http\Middleware\Authorize;
 
 Route::get('dashboard', function () {
@@ -14,4 +15,12 @@ Route::get('login-as/{id}', function ($id) {
     auth()->loginUsingId($id);
 
     return Redirect::to('/');
+});
+
+Route::get('users', function () {
+
+    $users = User::all();
+
+    return view('admin.users', compact('users'));
+
 });
