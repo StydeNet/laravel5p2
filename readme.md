@@ -15,27 +15,29 @@ En este curso aprenderás las **novedades de Laravel 5.2** con las cuales podrá
 
 En esta primera parte del curso de Laravel 5.2, vamos a comenzar a aprender sobre los nuevos features, mientras desarrollamos una estructura base que podrás aplicar en tus proyectos de mediano y gran tamaño. Vamos a separar el sistema en varias partes: public, admin, API; además vamos a aplicar diferentes reglas y permisos de acceso utilizando las nuevas características del framework y sin instalar paquetes adicionales.
 
-1. [Instalación y configuración](https://styde.net/instalacion-y-configuracion-de-laravel-5-2/)5:10
-2. [Registro, login y recuperación de clave con el comando make:auth](https://styde.net/registro-login-y-recuperacion-de-clave-con-el-comando-makeauth-en-laravel-5-2/) - 18:05
-3. [Cómo funcionan los Grupos de Middleware](https://styde.net/como-funcionan-los-grupos-de-middleware-en-laravel-5-2/) - 10:31
-4. [Protección de un panel de administración con el middleware Authorize](https://styde.net/proteccion-de-un-panel-de-administracion-con-el-middleware-authorize/) - 12:04
-5. [Autorizar rutas con el Middleware Authorize y las políticas de acceso](https://styde.net/autorizar-rutas-con-el-middleware-authorize-y-las-politicas-de-acceso-en-laravel-5-2/) - 16:18
-6. [Asociar rutas a modelos de Eloquent con Implicit Route Binding](https://styde.net/asociar-rutas-a-modelos-de-eloquent-con-implicit-route-binding/) - 12:55
-7. [Uso del Middleware Authorize en controladores de tipo Resource](https://styde.net/uso-del-middleware-authorize-en-controladores-de-tipo-resource/) - 18:26
+*   [Instalación y configuración](https://styde.net/instalacion-y-configuracion-de-laravel-5-2/)5:10
+*   [Registro, login y recuperación de clave con el comando make:auth](https://styde.net/registro-login-y-recuperacion-de-clave-con-el-comando-makeauth-en-laravel-5-2/) - 18:05
+*   [Cómo funcionan los Grupos de Middleware](https://styde.net/como-funcionan-los-grupos-de-middleware-en-laravel-5-2/) - 10:31
+*   [Protección de un panel de administración con el middleware Authorize](https://styde.net/proteccion-de-un-panel-de-administracion-con-el-middleware-authorize/) - 12:04
+*   [Autorizar rutas con el Middleware Authorize y las políticas de acceso](https://styde.net/autorizar-rutas-con-el-middleware-authorize-y-las-politicas-de-acceso-en-laravel-5-2/) - 16:18
+*   [Asociar rutas a modelos de Eloquent con Implicit Route Binding](https://styde.net/asociar-rutas-a-modelos-de-eloquent-con-implicit-route-binding/) - 12:55
+*   [Uso del Middleware Authorize en controladores de tipo Resource](https://styde.net/uso-del-middleware-authorize-en-controladores-de-tipo-resource/) - 18:26
 
 **Parte 2: Desarrollo de APIs**
 
 Laravel 5.2 incluye nuevos features para desarrollar APIs seguras en muy poco tiempo y sin instalar paquetes de terceros.
 
-8. [Limitar el número de accesos a una API con el Middleware ThrottleRequests](https://styde.net/limitar-el-numero-de-accesos-a-una-api-con-el-middleware-throttlerequests-de-laravel-5-2/) - 12:58
-9. [Sistema de Autenticación basado en token](https://styde.net/videotutorial-sistema-de-autenticacion-basado-en-token-en-laravel-5-2/) - 15:58
+*   [Limitar el número de accesos a una API con el Middleware ThrottleRequests](https://styde.net/limitar-el-numero-de-accesos-a-una-api-con-el-middleware-throttlerequests-de-laravel-5-2/) - 12:58
+*   [Sistema de Autenticación basado en token](https://styde.net/videotutorial-sistema-de-autenticacion-basado-en-token-en-laravel-5-2/) - 15:58
 
 **Parte 3: Nuevos métodos de prueba**
 
 En esta tercera parte, vamos a escribir pruebas automatizadas, utilizando los nuevos métodos de Laravel 5.2.
 
-9. [Prueba el registro de usuario con seeCredentials](https://styde.net/prueba-el-registro-de-usuario-con-seecredentials-en-laravel-5-2/) - 15:41
-10. Prueba el login y logout con seeIsAuthenticated y dontSeeIsAuthenticated.
+*   [Prueba el registro de usuario con seeCredentials](https://styde.net/prueba-el-registro-de-usuario-con-seecredentials-en-laravel-5-2/) - 15:41
+*   [Prueba el login y logout con seeIsAuthenticated y dontSeeIsAuthenticated](https://styde.net/prueba-el-login-y-logout-con-seeisauthenticated-y-dontseeisauthenticated/) - 16:36
+*   [Uso de los métodos seeInElement y within](https://styde.net/metodos-de-pruebas-within-y-seeinelement-de-interactswithpages-en-laravel-5-2/) - 14:37
+*   [seeText y seeElement](https://styde.net/pruebas-con-los-metodos-seetext-y-seeelement/) - 8:59
 
 **Parte 4: Más features**
 
@@ -62,7 +64,9 @@ En esta quinta parte, vamos a revisar el código fuente de Laravel y te voy a ex
 *   [                        Interfaces dinámicas con Laravel y jQuery    ](https://styde.net/curso-de-interfaces-dinamicas-con-laravel-y-jquery/)
 
 **Otras tecnologías**
-*   [                        Curso de Vue.js                  ](https://styde.net/curso-de-vue-js/)
-*   [                        Curso de Gulp                    ](https://styde.net/curso-gulp-y-herramientas-de-automatizacion/)
+*   [Curso de Gulp](https://styde.net/curso-gulp-y-herramientas-de-automatizacion/)
+*   [Curso de Vue.js](https://styde.net/curso-de-vue-js/)
+*	[Curso de Sass](https://styde.net/curso-de-sass/)
+*	[Curso básico de Swift](https://styde.net/curso-basico-de-swift/)
 
 © 2016 [Styde.net](https://styde.net/)
