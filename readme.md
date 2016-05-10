@@ -42,6 +42,7 @@ En esta tercera parte, vamos a escribir pruebas automatizadas, utilizando los nu
 **Parte 4: Más features**
 
 En esta parte 4, aprenderemos sobre los nuevos features de Blade y otro componentes del framework.
+*   [Directivas de Blade @verbatim y @php](https://styde.net/directivas-de-blade-verbatim-y-php-en-laravel-5-2/) - 12:44
 
 **Parte 5: En la matrix**
 
