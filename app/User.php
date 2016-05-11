@@ -28,4 +28,14 @@ class User extends Authenticatable
     {
         return $this->first_name . ' ' . $this->last_name;
     }
+
+    public function isCollaborator()
+    {
+        return $this->id != 1;
+    }
+
+    public function isAdmin()
+    {
+        return $this->id == 1;
+    }
 }

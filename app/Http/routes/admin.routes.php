@@ -17,10 +17,6 @@ Route::get('login-as/{id}', function ($id) {
     return Redirect::to('/');
 });
 
-Route::get('users', function () {
-
-    $users = User::all();
-
-    return view('admin.users', compact('users'));
-
-});
+Route::resource('users', 'UserController', ['parameters' => [
+    'users' => 'user'
+]]);
