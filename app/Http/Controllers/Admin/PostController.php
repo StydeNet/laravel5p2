@@ -32,7 +32,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return 'Create a posts [form]';
+        return view('admin.posts.create');
     }
 
     /**
@@ -43,7 +43,14 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        return 'Store a post in the DB';
+        $this->validate($request, [
+            'title' => 'required',
+            'content' => 'required'
+        ]);
+
+        Post::create($request->all());
+
+        return back();
     }
 
     /**

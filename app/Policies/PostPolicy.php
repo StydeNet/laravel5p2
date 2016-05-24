@@ -15,6 +15,11 @@ class PostPolicy
         return true;
     }
 
+    public function create()
+    {
+        return true;
+    }
+
     public function update(User $user, Post $post)
     {
         return $user->id == $post->author_id;
