@@ -24,6 +24,11 @@ class User extends Authenticatable
         'password', 'remember_token', 'api_token'
     ];
 
+    public function experiences()
+    {
+        return $this->hasMany(Experience::class);
+    }
+    
     public function getNameAttribute()
     {
         return $this->first_name . ' ' . $this->last_name;

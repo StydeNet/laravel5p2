@@ -95,6 +95,15 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+
+        'experience.*.technology' => [
+            'required' => 'The technology is required',
+            'between'  => 'The technology must be between :min and :max characters.'
+        ],
+        'experience.*.years' => [
+            'integer' => 'The year must be an integer',
+            'required_with' => 'The year field is required with technology.',
+        ],
     ],
 
     /*
