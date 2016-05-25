@@ -48,7 +48,7 @@ class PostController extends Controller
             'content' => 'required'
         ]);
 
-        Post::create($request->all());
+        Post::submit($request->all());
 
         return back()->with('success', true);
     }

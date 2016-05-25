@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Activity;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -33,6 +34,8 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot($events);
 
-        //
+        $events->listen('eloquent.created: *', function ($model) {
+            Activity::record('create', $model);
+        });
     }
 }
