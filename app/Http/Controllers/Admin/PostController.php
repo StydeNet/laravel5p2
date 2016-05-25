@@ -50,7 +50,7 @@ class PostController extends Controller
 
         Post::create($request->all());
 
-        return back();
+        return back()->with('success', true);
     }
 
     /**
