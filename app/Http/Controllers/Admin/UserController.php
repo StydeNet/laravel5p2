@@ -8,9 +8,19 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::all();
+        /*
+        $users = User::search($request->search)
+          ->withCount(['experiences' => function ($q) {
+              $q->where('name', 'PHP');
+          }])
+          ->inRandomOrder()
+          ->get();
+        */
+
+        $users = User::whereColumn('first_name', 'last_name')
+            ->get();
 
         return view('admin.users.index', compact('users'));
     }
