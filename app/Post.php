@@ -2,8 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 use Illuminate\Support\Str;
+use App\Events\PostWasPublished;
+use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
@@ -22,5 +24,25 @@ class Post extends Model
         $post->save();
 
         return $post;
+    }
+
+    public function isPublished()
+    {
+        return $this->published_at != null;
+    }
+
+    public function publish()
+    {
+        if ($this->isPublished()) {
+            return false;
+        }
+
+        $this->published_at = Carbon::now()->toDateTimeString();
+
+        if ($saved = $this->save()) {
+            event(new PostWasPublished($this));
+        }
+
+        return $saved;
     }
 }

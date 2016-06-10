@@ -10,6 +10,10 @@ Route::get('dashboard', function () {
 Route::resource('posts', 'PostController', ['parameters' => [
     'posts' => 'post'
 ]]);
+Route::put('posts/{post}/publish', [
+    'as' => 'admin.posts.publish',
+    'uses' => 'PostController@publish'
+]);
 
 Route::get('login-as/{id}', function ($id) {
     auth()->loginUsingId($id);

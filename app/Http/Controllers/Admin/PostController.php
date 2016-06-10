@@ -48,9 +48,10 @@ class PostController extends Controller
             'content' => 'required'
         ]);
 
-        Post::submit($request->all());
+        $post = Post::submit($request->all());
 
-        return back()->with('success', true);
+        return redirect()->route('admin.posts.show', $post)
+            ->with('success', '¡Post creado!');
     }
 
     /**
@@ -61,7 +62,16 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        dd($post);
+        return view('admin.posts.show', compact('post'));
+    }
+
+    public function publish(Post $post)
+    {
+        if ($post->publish()) {
+            session()->flash('success', 'Post publicado!');
+        }
+
+        return redirect()->route('admin.posts.show', $post);
     }
 
     /**

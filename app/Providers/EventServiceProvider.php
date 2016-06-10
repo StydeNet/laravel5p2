@@ -22,6 +22,11 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\LogLastLogin',
             'App\Listeners\UpdateLastLoggedAt',
         ],
+        'App\Events\PostWasPublished' => [
+            'App\Listeners\NotifyToSlack',
+            'App\Listeners\TweetPost',
+            'App\Listeners\NotifyToSubscribers',
+        ]
     ];
 
     /**

@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->integer('author_id')->unsigned()->index();
             // foreign key
 
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }

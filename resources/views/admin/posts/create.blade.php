@@ -24,7 +24,7 @@
 
                             <div class="form-group">
                                 <label for="title">Contenido:</label>
-                                <textarea name="content" class="form-control">{{ old('title') }}</textarea>
+                                <textarea name="content" class="form-control">{{ old('content') }}</textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Crear post</button>
