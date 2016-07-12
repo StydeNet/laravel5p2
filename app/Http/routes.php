@@ -22,14 +22,18 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['web']], function ($router) {
     require __DIR__ . '/routes/web.routes.php';
 });
 
-Route::group(['middleware' => ['admin'], 'prefix' => 'admin/', 'namespace' => 'Admin'], function () {
+Route::group(['middleware' => ['web'], 'prefix' => 'admin/', 'namespace' => 'Admin'], function ($router) {
+    require __DIR__ . '/routes/admin_auth.routes.php';
+});
+
+Route::group(['middleware' => ['admin'], 'prefix' => 'admin/', 'namespace' => 'Admin'], function ($router) {
     require __DIR__ . '/routes/admin.routes.php';
 });
 
-Route::group(['middleware' => ['api'], 'prefix' => 'api/'], function () {
+Route::group(['middleware' => ['api'], 'prefix' => 'api/'], function ($router) {
     require __DIR__ . '/routes/api.routes.php';
 });
