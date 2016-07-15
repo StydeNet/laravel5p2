@@ -1,3 +1,3 @@
-<p>Recibiste un mensaje de {{ $name }}:</p>
+<p>Recibiste un mensaje de {{ $contact->name }} ({{ $contact->email }}):</p>
 
-<p>{{ $body }}</p>
+<p>{{ $contact->body }}</p>
