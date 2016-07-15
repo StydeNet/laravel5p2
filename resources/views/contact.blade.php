@@ -18,7 +18,7 @@
                             <label class="col-md-4 control-label">Nombre</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                                <input type="text" value="Duilio" class="form-control" name="name" value="{{ old('name') }}">
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -32,7 +32,7 @@
                             <label class="col-md-4 control-label">Email</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="email" value="{{ old('email') }}">
+                                <input type="text" value="i@duilio.me" class="form-control" name="email" value="{{ old('email') }}">
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -46,7 +46,7 @@
                             <label class="col-md-4 control-label">Mensaje</label>
 
                             <div class="col-md-6">
-                                <textarea name="body" rows="4" class="form-control">{{ old('body') }}</textarea>
+                                <textarea name="body" rows="4" class="form-control">{{ old('body', 'Mensaje') }}</textarea>
 
                                 @if ($errors->has('body'))
                                     <span class="help-block">
