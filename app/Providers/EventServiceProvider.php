@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Activity;
+use App\Events\ContactMessageSent;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -26,6 +27,9 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\NotifyToSlack',
             'App\Listeners\TweetPost',
             'App\Listeners\NotifyToSubscribers',
+        ],
+        'App\Events\ContactMessageSent' => [
+            'App\Listeners\SendContactEmail'
         ]
     ];
 

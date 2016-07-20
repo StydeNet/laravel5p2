@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\ContactMessage;
-use App\Jobs\SendContactEmail;
 use Illuminate\Http\Request;
-use Illuminate\Mail\Message;
-use Illuminate\Support\Facades\Mail;
+use App\Events\ContactMessageSent;
 
 class ContactController extends Controller
 {
@@ -25,9 +23,11 @@ class ContactController extends Controller
 
         $data = $request->only('name', 'email', 'body');
 
-        $contact = ContactMessage::create($data);
+        $contact = ContactMessage::submitMessage($data);
 
-        $this->dispatch(new SendContactEmail($contact));
+        //event(new ContactMessageSent($contact));
+
+        //$this->dispatch(new SendContactEmail($contact));
 
         return back()->with('success', '¡Mensaje recibido!');
     }
