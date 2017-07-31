@@ -43,6 +43,10 @@ En esta tercera parte, vamos a escribir pruebas automatizadas, utilizando los nu
 
 En esta parte 4, aprenderemos sobre los nuevos features de Blade y otro componentes del framework.
 *   [Directivas de Blade @verbatim y @php](https://styde.net/directivas-de-blade-verbatim-y-php-en-laravel-5-2/) - 12:44
+*   [Nuevos helpers](https://styde.net/nuevos-helpers-en-laravel-5-2/) - 9:24
+*   [Validación de arrays](https://styde.net/como-validar-arrays-en-laravel-5-2/) - 24:09
+*   [Nuevos métodos disponibles en Fluent y Eloquent ORM](https://styde.net/nuevos-metodos-disponibles-en-fluent-y-eloquent-orm-en-laravel-5-2/) - 21:09
+*   [Autenticación múltiple](https://styde.net/autenticacion-multiple-a-partir-de-laravel-5-2/) - 25:45
 
 **Parte 5: En la matrix**
 
